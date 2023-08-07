@@ -1,5 +1,22 @@
 Our goal is to launch a static website using an Amazon EC2 
 
+LAUNCH A WEB PAGE ON AN EC2 INSTANCE IN THE CLOUD
+
+1. Go to aws.amazon.com and register for an account.
+
+2. We shall spin an EC2 virtual machine.
+
+3. Log into our machine via SSH and install Apache
+
+4. create our sample html page index.html
+
+5. Navigate to /var/www/html folder and create our index.html file here
+
+6. Go to our browser and use the public IP address of our EC2 instance to view our web page
+
+
+CREATE AWS ACCOUNT 
+
 1. Create and sign in to your AWS Console
 
 Go to the AWS Management Console (https://aws.amazon.com/).
@@ -96,3 +113,24 @@ body {
 ```
 
 10. Open a web browser and enter your EC2 instance's public IP address or public DNS hostname in the address bar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
