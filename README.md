@@ -28,8 +28,7 @@ Once you're logged in, navigate to the EC2 dashboard by clicking on the "Service
 Under the "Compute" section, select "EC2."
 
 
-- Choose an Instance type of t2.micro as this is on the free tier and would not be charged.
-- Create Keypair .  The private key will be downloaded to your machine on creation.
+
 - Configure Security Group.
 
  Go to the security tab for the instance
@@ -50,6 +49,11 @@ Under the "Compute" section, select "EC2."
 
 
 ![ec2](./images/ec2-2.png)
+
+
+
+- Choose an Instance type of t2.micro as this is on the free tier and would not be charged.
+- Create Keypair .  The private key will be downloaded to your machine on creation.
 
 
 ![ec2](./images/ec2-3.png)
