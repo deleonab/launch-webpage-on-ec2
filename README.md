@@ -52,7 +52,7 @@ Under the "Compute" section, select "EC2."
 Click on the "Launch Instance" button to create a new EC2 instance.
 
 
-#### Access the EC2 Instance via SSH
+### Access the EC2 Instance via SSH
 
 Once the instance is running, select it from the EC2 Dashboard.
 Click on the "Connect" button to get the SSH connection details.
