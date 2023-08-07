@@ -58,6 +58,7 @@ Once the instance is running, select it from the EC2 Dashboard.
 Click on the "Connect" button to get the SSH connection details.
 Use the provided SSH command to connect to your EC2 instance e.g 
 ssh -i /path/to/your/keypair.pem ubuntu@your_ec2_public_ip
+
 ![ec2](./images/ec2-6.png)
 ![ec2](./images/ec2-7.png)
 -------------------------------
@@ -77,17 +78,17 @@ Now we have successfully logged into our instance
 
 #### Install Apache Server on Ubuntu
 
-Once connected to the EC2 instance via SSH, update the package index by running:
+#### Once connected to the EC2 instance via SSH, update the package index by running:
 
-#### Update the package index
+
 ```
 sudo apt update
 ```
 #### Install the Apache web server by running:
-
+```
 sudo apt install apache2 -y
 
-
+```
 
 9.  Create a Simple HTML Web Page
 Apache serves web pages from /var/www/html/
