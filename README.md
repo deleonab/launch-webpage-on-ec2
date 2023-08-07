@@ -62,7 +62,11 @@ When you create a new keypair, the private key will automatically download unto 
 YOu will need to take note of it's locaation as it will be needed to log into your instance.
 
 6. Click "Launch Instances."
-
+![ec2](./images/ec2-6.png)
+![ec2](./images/ec2-7.png)
+![ec2](./images/ec2-8.png)
+![ec2](./images/ec2-9.png)
+![ec2](./images/ec2-10.png)
 7.  Access the EC2 Instance via SSH
 
 Once the instance is running, select it from the EC2 Dashboard.
