@@ -27,6 +27,20 @@ Sign in using your AWS account credentials.
 Once you're logged in, navigate to the EC2 dashboard by clicking on the "Services" menu at the top of the page.
 Under the "Compute" section, select "EC2."
 
+- Name your Instance
+- Choose an Amazon Machine Image (AMI) that runs Ubuntu. 
+- Choose an Instance type of t2.micro as this is on the free tier and would not be charged.
+- Create Keypair .  The private key will be downloaded to your machine on creation.
+- Configure Security Group.
+
+ Go to the security tab for the instance
+ Click on the security group
+ Go to the inbound rules of the Instance and open up the following ports.
+ Port 22 - To allow us to log into the instance via SSH to install Apache.
+ Port 80 - To allow http access to our instance through the Instance's public IP address.
+
+- Click "Launch Instances."
+
 3. Launch an EC2 Instance
 ![ec2](./images/ec2-1.png)
 ![ec2](./images/ec2-2.png)
@@ -37,42 +51,20 @@ Under the "Compute" section, select "EC2."
 
 Click on the "Launch Instance" button to create a new EC2 instance.
 
-Choose an Amazon Machine Image (AMI) that runs Ubuntu. 
 
-Choose an Instance type of t2.micro as this is on the free tier and would not be charged.
-
-4. Configure Security Group.
-
- Go to the security tab for the instance
-
- Click on the security group
-
- Go to the inbound rules of the Instance and open up the following ports.
-
- Port 22 - To allow us to log into the instance via SSH to install Apache.
-
- Port 80 - To allow http access to our instance through the Instance's public IP address.
-
-Click "Review and Launch."
-
-5. Select/Create a Key Pair
-
-Choose an existing key pair or create a new one. This will allow you to SSH into the instance later.
-When you create a new keypair, the private key will automatically download unto your local machine. 
-YOu will need to take note of it's locaation as it will be needed to log into your instance.
-
-6. Click "Launch Instances."
-![ec2](./images/ec2-6.png)
-![ec2](./images/ec2-7.png)
-![ec2](./images/ec2-8.png)
-![ec2](./images/ec2-9.png)
-![ec2](./images/ec2-10.png)
-7.  Access the EC2 Instance via SSH
+-  Access the EC2 Instance via SSH
 
 Once the instance is running, select it from the EC2 Dashboard.
 Click on the "Connect" button to get the SSH connection details.
 Use the provided SSH command to connect to your EC2 instance e.g 
 ssh -i /path/to/your/keypair.pem ubuntu@your_ec2_public_ip
+![ec2](./images/ec2-6.png)
+![ec2](./images/ec2-7.png)
+
+- Navigate to the directory on you local machine where your private key is located
+![ec2](./images/ec2-8.png)
+![ec2](./images/ec2-9.png)
+![ec2](./images/ec2-10.png)
 
 8.  Install Apache Server on Ubuntu
 
@@ -85,6 +77,10 @@ sudo apt update
 #### Install the Apache web server by running:
 
 sudo apt install apache2 -y
+
+![ec2](./images/ec2-11.png)
+![ec2](./images/ec2-12.png)
+![ec2](./images/ec2-13.png)
 
 9.  Create a Simple HTML Web Page
 Apache serves web pages from /var/www/html/
