@@ -27,8 +27,7 @@ Sign in using your AWS account credentials.
 Once you're logged in, navigate to the EC2 dashboard by clicking on the "Services" menu at the top of the page.
 Under the "Compute" section, select "EC2."
 
-- Name your Instance - Give it a meaningful name
-- Choose an Amazon Machine Image (AMI) that runs Ubuntu. 
+
 - Choose an Instance type of t2.micro as this is on the free tier and would not be charged.
 - Create Keypair .  The private key will be downloaded to your machine on creation.
 - Configure Security Group.
@@ -42,6 +41,11 @@ Under the "Compute" section, select "EC2."
 - Click "Launch Instances."
 
 3. Launch an EC2 Instance
+
+- Name your Instance - Give it a meaningful name
+- Choose an Amazon Machine Image (AMI) that runs Ubuntu. 
+
+
 ![ec2](./images/ec2-1.png)
 
 
