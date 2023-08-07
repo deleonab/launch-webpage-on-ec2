@@ -1,6 +1,6 @@
 Our goal is to launch a static website using an Amazon EC2 
 
-LAUNCH A WEB PAGE ON AN EC2 INSTANCE IN THE CLOUD
+### LAUNCH A WEB PAGE ON AN EC2 INSTANCE IN THE CLOUD
 
 1. Go to aws.amazon.com and register for an account.
 
@@ -15,14 +15,14 @@ LAUNCH A WEB PAGE ON AN EC2 INSTANCE IN THE CLOUD
 6. Go to our browser and use the public IP address of our EC2 instance to view our web page
 
 
-CREATE AWS ACCOUNT 
+### CREATE AWS ACCOUNT 
 
-1. Create and sign in to your AWS Console
+#### 1. Create and sign in to your AWS Console
 
 Go to the AWS Management Console (https://aws.amazon.com/).
 Sign in using your AWS account credentials.
 
-2. Navigate to EC2 Dashboard
+#### 2. Navigate to EC2 Dashboard
 
 Once you're logged in, navigate to the EC2 dashboard by clicking on the "Services" menu at the top of the page.
 Under the "Compute" section, select "EC2."
@@ -52,7 +52,7 @@ Under the "Compute" section, select "EC2."
 Click on the "Launch Instance" button to create a new EC2 instance.
 
 
--  Access the EC2 Instance via SSH
+#### Access the EC2 Instance via SSH
 
 Once the instance is running, select it from the EC2 Dashboard.
 Click on the "Connect" button to get the SSH connection details.
@@ -61,12 +61,12 @@ ssh -i /path/to/your/keypair.pem ubuntu@your_ec2_public_ip
 ![ec2](./images/ec2-6.png)
 ![ec2](./images/ec2-7.png)
 
-- Navigate to the directory on you local machine where your private key is located
+####  Navigate to the directory on you local machine where your private key is located
 ![ec2](./images/ec2-8.png)
 ![ec2](./images/ec2-9.png)
 ![ec2](./images/ec2-10.png)
 
-8.  Install Apache Server on Ubuntu
+#### Install Apache Server on Ubuntu
 
 Once connected to the EC2 instance via SSH, update the package index by running:
 
@@ -78,9 +78,7 @@ sudo apt update
 
 sudo apt install apache2 -y
 
-![ec2](./images/ec2-11.png)
-![ec2](./images/ec2-12.png)
-![ec2](./images/ec2-13.png)
+
 
 9.  Create a Simple HTML Web Page
 Apache serves web pages from /var/www/html/
@@ -116,7 +114,9 @@ body {
 
 
 
-
+![ec2](./images/ec2-11.png)
+![ec2](./images/ec2-12.png)
+![ec2](./images/ec2-13.png)
 
 
 
