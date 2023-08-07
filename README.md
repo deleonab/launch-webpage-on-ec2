@@ -29,16 +29,6 @@ Under the "Compute" section, select "EC2."
 
 
 
-- Configure Security Group.
-
- Go to the security tab for the instance
- Click on the security group
- Go to the inbound rules of the Instance and open up the following ports.
- Port 22 - To allow us to log into the instance via SSH to install Apache.
- Port 80 - To allow http access to our instance through the Instance's public IP address.
-
-- Click "Launch Instances."
-
 3. Launch an EC2 Instance
 
 - Name your Instance - Give it a meaningful name
@@ -60,6 +50,16 @@ Under the "Compute" section, select "EC2."
 
 
 ![ec2](./images/ec2-4.png)
+
+
+- Configure Security Group.
+
+ Go to the security tab for the instance
+ Click on the security group
+ Go to the inbound rules of the Instance and open up the following ports.
+ Port 22 - To allow us to log into the instance via SSH to install Apache.
+ Port 80 - To allow http access to our instance through the Instance's public IP address.
+
 
 
 ![ec2](./images/ec2-5.png)
