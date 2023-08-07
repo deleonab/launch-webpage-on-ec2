@@ -64,9 +64,14 @@ ssh -i /path/to/your/keypair.pem ubuntu@your_ec2_public_ip
 
 #### Copy the command to connect to your EC2 instance via SSH 
 ![ec2](./images/ec2-8.png)
+
+
 ####  Navigate to the directory on you local machine where your private key is located and run the command ssh -i /path/to/your/keypair.pem ubuntu@your_ec2_public_ip
+
+
 ![ec2](./images/ec2-9.png)
 
+Now we have successfully logged into our instance
 
 ![ec2](./images/ec2-10.png)
 
