@@ -215,14 +215,28 @@ This is because we have not opened Port 80 to allow http traffic to our instance
 - Add a new rule and select http. This is port 80 by default
 - Set the CIDR block to 0.0.0.0/0 to allow access from everywhere.
 
+
+- Go back to the browser and refresh the page or enter the instance public IP address again.
+
+- We should now see our web page in the browser
+
+![page visible](./images/page.png)
+
+SUCCESS!!!!
+
+The final thing is to delete our instance to avoid incurring unexpected costs
+
+- Go to the console
+- Select the instance
+- Select Action
+- Terminate Instance
+
 ![ec2](./images/ec2-11.png)
 ![ec2](./images/ec2-12.png)
 ![ec2](./images/ec2-13.png)
 
 
-- Go back to the browser and refresh the page or enter the instance public IP address again.
 
-- We should now see our web page in the browser
 
 
 
