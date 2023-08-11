@@ -1,4 +1,6 @@
-Our goal is to launch a static website using an Amazon EC2 instance.
+### Our goal is to launch a static website using an Amazon EC2 instance.
+
+![web on ec2](./images/web-on-ec2.jpg)
 
 ### LAUNCH A WEB PAGE ON AN EC2 INSTANCE IN THE CLOUD
 
