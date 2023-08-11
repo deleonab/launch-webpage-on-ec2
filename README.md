@@ -228,8 +228,8 @@ The final thing is to delete our instance to avoid incurring unexpected costs
 
 - Go to the console
 - Select the instance
-- Select Action
-- Terminate Instance
+- Click on Instance state
+- Select Terminate Instance from options
 
 ![ec2](./images/ec2-11.png)
 ![ec2](./images/ec2-12.png)
