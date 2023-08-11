@@ -202,18 +202,27 @@ body {
 ```
 
 
+### 7. View our web page in the browser
 
+- Log into the console, go to your instance, navigate to the details tab and copy the public IP address of that instance.
+- Paste the public IP in your browser and enter
+- As expected, you will get a timeout error
+This is because we have not opened Port 80 to allow http traffic to our instance
+- Go to our instance security tab , go to security group and editthe inbound rules.
 
-
-
-Log into the console, got to your instance and navigate to the details tab to copy the public IP address of tht instance
+- Add a new rule and select http. This is port 80 by default
+- Set the CIDR block to 0.0.0.0/0 to allow access from everywhere.
 
 ![ec2](./images/ec2-11.png)
 ![ec2](./images/ec2-12.png)
 ![ec2](./images/ec2-13.png)
 
 
-Port 80 - To allow http access to our instance through the Instance's public IP address.
+- Go back to the browser and refresh the page or enter the instance public IP address again.
+
+- We should now see our web page in the browser
+
+
 
 
 
