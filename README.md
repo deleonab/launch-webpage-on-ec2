@@ -119,14 +119,6 @@ sudo systemctl status apache2
 Apache serves web pages from /var/www/html/
 We need to create index.html in this directory
 
-- Use your favorite text editor (e.g., nano or vim) to create an index.html file with the 
-with the following content:
-```
-sudo vi index.html
-```
-### Below is the html code for my web page
-- Copy and paste this into index.html
-- Save by using command :wq!
 
 ```
 <!DOCTYPE html>
@@ -151,6 +143,59 @@ body {
 
 ```
 
+### 5. Navigate to /var/www/html/ and create index.html there
+
+- navigate to /var/www/html/
+```
+cd /var/www/html
+```
+- when inside /var/www/html/ folder . list the files there
+
+```
+ls
+```
+- It will contain the default apache index.html page
+- remove the page so that we can replace with ours
+
+```
+sudo rm index.html
+```
+- Once removed, we can create ours to replace the default page
+
+
+### 6. Create our index.html file in /var/www/html/
+- Use your favorite text editor (e.g., nano or vim) to create an index.html 
+```
+sudo vi index.html
+```
+
+- Copy and paste your html code into index.html 
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+<center><image src="images/devops-uncut-logo-300.jpg"></center>
+<center><h1>Welcome to DevOps Uncut</h1></center>
+<p><center>Congratulations! You have created your first web page in the cloud.</center></p>
+
+</body>
+</html>
+
+```
+
+- Save by using command :wq!
+
 - After pasting, save with
 ```
 :wq!
@@ -159,7 +204,7 @@ body {
 
 
 
-10. Open a web browser and enter your EC2 instance's public IP address or public DNS hostname in the address bar.
+
 
 Log into the console, got to your instance and navigate to the details tab to copy the public IP address of tht instance
 
